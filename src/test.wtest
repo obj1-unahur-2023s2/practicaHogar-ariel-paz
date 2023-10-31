@@ -1,0 +1,13 @@
+import objects.*
+describe "Tests de Pepita" {
+	const dorm = new Dormitorio(persona=ariel, ocupantes=#{1})
+
+	method initialize() {
+		
+		//pepita.agregarCiudad(sanMartin)
+	}
+	
+	test "cuando quiero sacar un valor alfabetico tira error" {
+		assert.throwsExceptionWithMessage("No puede agregarse", { dorm.ingresarOcupante(ariel) })
+	}
+}
